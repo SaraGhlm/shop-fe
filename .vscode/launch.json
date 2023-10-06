@@ -12,7 +12,7 @@
       "image": "shop-fe",
       "service": {
         "name": "shop-fe",
-        "containerPort": 8080,
+        "containerPort": 3000,
         "resources": {
           "limits": {
             "memory": "256Mi"

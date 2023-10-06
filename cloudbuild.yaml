@@ -26,6 +26,8 @@ steps:
       - "$_REGION-docker.pkg.dev/$PROJECT_ID/$_SERVICE_NAME/$_SERVICE_NAME:$COMMIT_SHA"
       - "--region"
       - "$_REGION"
+      - "--port"
+      - "3000"
 images:
   - "$_REGION-docker.pkg.dev/$PROJECT_ID/$_SERVICE_NAME/$_SERVICE_NAME:$COMMIT_SHA"
 substitutions:
