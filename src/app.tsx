@@ -13,7 +13,7 @@ const App = () => {
     fetch(BE_API_URL + "/api/v1/users")
       .then((response) => response.json())
       .then((data) => setData(data.firstname));
-  }, []);
+  }, [data]);
 
   return <p>{data}</p>;
   // return <RouterProvider router={router} />;
