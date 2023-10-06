@@ -5,8 +5,6 @@ COPY package*.json ./
 
 # ---- Dependencies ----
 FROM base AS dependencies  
-ARG API_URL
-ENV VITE_BACKEND_URL=$API_URL
 RUN npm install
 COPY . .
 
