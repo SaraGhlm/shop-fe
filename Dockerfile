@@ -8,7 +8,7 @@ COPY package.json package-lock.json ./
 
 RUN npm install --silent
 
-COPY ./dist ./
+COPY . ./
 
 RUN npm run build
 
